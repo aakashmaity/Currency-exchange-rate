@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Currency Exchange Website</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="p1"></div>
+    <div class="container">
+      <h1>Currency Exchange rates</h1>
+      <div class="inputs">
+        <form id="myform" action="/rate" method="POST">
+          <div class="inptsss">
+            <div>
+              <select name="from" class="form-select" id="type">
+                <option value="" data-display="Select">Select</option>
+                <option value="AUD">AUD</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="TWD">TWD</option>
+                <option value="INR">INR</option>
+                <option value="VND">VND</option>
+                <option value="IDR">IDR</option>
+                <option value="DKK">DKK</option>
+                <option value="SGD">SGD</option>
+                <option value="MYR">MYR</option>
+                <option value="JPY">JPY</option>
+                <option value="HKD">HKD</option>
+              </select>
+            </div>
+            <div>
+              <select name="to" class="form-select" id="type">
+                <option value="" data-display="Select">Select</option>
+                <option value="AUD">AUD</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="TWD">TWD</option>
+                <option value="INR">INR</option>
+                <option value="VND">VND</option>
+                <option value="IDR">IDR</option>
+                <option value="DKK">DKK</option>
+                <option value="SGD">SGD</option>
+                <option value="MYR">MYR</option>
+                <option value="JPY">JPY</option>
+                <option value="HKD">HKD</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <button type="submit" id="btn" form="myform">Submit</button>
+      </div>
+      <div class="resultss">
+        <label for="result">Rate</label>
+        <div id="result"><%= rate %></div>
+      </div>
+    </div>
+
+    <div class="containerList">
+      <div>
+        <p>AUD - Australia Dollar</p>
+        <p>USD - USA Dollar</p>
+        <p>EUR - Euro</p>
+        <p>TWD - Taiwan Dollar</p>
+        <p>INR - India Rupee</p>
+        <p>VND - Vietnam Dong</p>
+        <p>IDR - Indonesia Rupiah</p>
+        <p>DKK - Denmark Krone</p>
+        <p>SGD - Singapore Dollar</p>
+        <p>MYR - Malaysia Ringgit</p>
+        <p>JPY - Japan Yen</p>
+        <p>HKD - Hong Kong Dollar</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Designed by
+        <a href="https://www.linkedin.com/in/aakashmaity">Akash Maity</a>
+      </p>
+    </div>
+    <script src="../main.js"></script>
+  </body>
+</html>
