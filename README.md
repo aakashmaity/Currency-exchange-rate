@@ -6,10 +6,10 @@ https://rapidapi.com/fyhao/api/currency-exchange
 </br>
 using this API for this project.
 </br>
-#npm i 
+npm i 
 </br>
-<button>npm start</button>
+npm start
 </br>
 Server is running in port 3000
 </br>
-#http://localhost:3000
+# http://localhost:3000
