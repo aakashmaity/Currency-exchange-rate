@@ -8,7 +8,7 @@ using this API for this project.
 </br>
 #npm i 
 </br>
-#npm start
+# npm start
 </br>
 Server is running in port 3000
 </br>
